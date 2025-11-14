@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+main {
+  width: 100%;
+
+  background: #111;
+  color: #fff;
+}
+.elem {
+  height: 200px;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 40px;
+}
+.elem h1 {
+  font-size: 100px;
+}
+.elem img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  border-radius: 20px;
+  mix-blend-mode: difference;
+  /* transition: all 1s ease; */
+  opacity: 0;
+}

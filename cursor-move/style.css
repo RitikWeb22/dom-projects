@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  mix-blend-mode: difference;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+h1 {
+  font-size: 10rem;
+  color: #f0f0f0;
+}

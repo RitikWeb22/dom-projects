@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --bg-primary-color: #222;
+  --bg-secondary-color: #f0f0f0;
+  --bg-blue: #216dfa;
+  --bg-gray: #363c44;
+
+  /* space */
+  --space-md: 10px;
+  --space-lg: 16px;
+  --space-xl: 20px;
+  --space-xxl: 30px;
+}
+main {
+  width: 100%;
+  height: 100%;
+  background: var(--bg-primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  width: 50%;
+  height: 350px;
+  background: var(--bg-secondary-color);
+  border-radius: var(--space-md);
+  display: flex;
+}
+.left,
+.right {
+  width: 50%;
+  height: 100%;
+  gap: var(--space-md);
+}
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  border: 10px solid var(--bg-gray);
+}
+
+.right {
+  padding-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  padding-right: var(--space-md);
+}
+#username {
+  font-size: var(--space-xxl);
+}
+.name {
+  font-size: var(--space-lg);
+  font-weight: 600;
+}
+.statics {
+  display: flex;
+  gap: var(--space-lg);
+  font-size: var(--space-xl);
+}
+.category {
+  color: var(--bg-primary-color);
+  font-size: var(--space-lg);
+}
+.bio {
+  font-size: var(--space-xl);
+}
+.buttons {
+  display: flex;
+  width: 100%;
+  gap: var(--space-lg);
+  padding: var(--space-lg);
+}
+button {
+  cursor: pointer;
+  border-radius: var(--space-md);
+  padding: var(--space-lg) var(--space-xxl);
+  width: 100%;
+  font-size: var(--space-lg);
+  border: 1px solid var(--bg-gray);
+}
+
+#Follow {
+  background: var(--bg-blue);
+  color: var(--bg-secondary-color);
+}
+#Following {
+  display: none;
+  background: var(--bg-blue);
+  color: var(--bg-secondary-color);
+}
+#Message {
+  background: var(--bg-gray);
+  color: var(--bg-secondary-color);
+}
+.message {
+  width: 20%;
+  height: 400px;
+  position: fixed;
+  bottom: 2%;
+  right: 3%;
+  background: var(--bg-secondary-color);
+  border-radius: var(--space-md);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.messageBox {
+  display: none;
+}
+.head {
+  width: 100%;
+  height: 20%;
+  border: 1px solid var(--bg-gray);
+  display: flex;
+  align-items: center;
+  padding: var(--space-md);
+}
+.content {
+  width: 100%;
+  height: 60%;
+  position: relative;
+}
+.sent-message {
+  width: 100%;
+  height: 20%;
+  border: 1px solid var(--bg-gray);
+}
+form {
+  padding: var(--space-lg);
+  display: flex;
+  gap: var(--space-md);
+}
+input:nth-child(1) {
+  padding: var(--space-lg) var(--space-lg);
+  width: 80%;
+  border-radius: var(--space-md);
+  border: 1px solid #363c44;
+}
+input:nth-child(2) {
+  padding: var(--space-lg) var(--space-lg);
+  width: 20%;
+  border-radius: var(--space-md);
+  background: var(--bg-blue);
+  color: var(--bg-secondary-color);
+  border: none;
+  cursor: pointer;
+}
+.head img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.profile {
+  padding-left: var(--space-md);
+}
+.profile p {
+  font-size: var(--space-lg);
+  font-weight: 700;
+}
+.profile small {
+  color: green;
+  font-weight: 800;
+}
+
+.content p {
+  padding: 1rem;
+  background: var(--bg-blue);
+  width: 60%;
+  border-radius: var(--space-lg);
+  color: var(--bg-secondary-color);
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
