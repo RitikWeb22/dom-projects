@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main button {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  background: rgb(40, 180, 180);
+  color: #f0f0f0;
+  cursor: pointer;
+  position: relative;
+  border: none;
+  z-index: 10;
+}
+main button:active {
+  scale: 0.95;
+}
+main button:hover {
+  background: rgb(37, 162, 162);
+}
+main .box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+}
+main .box p {
+  font-size: 20px;
+  color: #f0f0f0;
+  font-weight: 800;
+  text-align: center;
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */
